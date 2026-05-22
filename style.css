@@ -144,3 +144,33 @@ footer a:hover {
   font-size: 14px;
   opacity: 0.7;
 }
+@media screen and (max-width: 768px) {
+
+  header h1 {
+    font-size: 28px;
+  }
+
+  header p {
+    font-size: 16px;
+  }
+
+  .buttons a {
+    display: block;
+    margin: 10px auto;
+    width: 200px;
+  }
+
+  .project-card {
+    padding: 20px;
+  }
+
+  .skills-container {
+    justify-content: center;
+  }
+
+  .profile-image {
+    width: 140px;
+    height: 140px;
+  }
+
+}
