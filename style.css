@@ -122,6 +122,14 @@ footer {
   margin-top: 50px;
 }
 
+footer {
+  background-color: #111827;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  margin-top: 50px;
+}
+
 footer a {
   color: #93c5fd;
   text-decoration: none;
