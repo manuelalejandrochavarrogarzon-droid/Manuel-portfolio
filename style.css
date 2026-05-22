@@ -58,3 +58,30 @@ div {
 .buttons a:hover {
   background-color: #d1d5db;
 }
+.project-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+}
+
+.project-card h3 {
+  margin-top: 0;
+  color: #111827;
+}
+
+.project-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #111827;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.project-button:hover {
+  background-color: #374151;
+}
