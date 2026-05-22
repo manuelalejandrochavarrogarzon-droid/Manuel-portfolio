@@ -94,3 +94,23 @@ div {
   margin-bottom: 20px;
   border: 4px solid white;
 }
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.skill {
+  background-color: #111827;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 30px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.skill:hover {
+  background-color: #374151;
+  transform: scale(1.05);
+}
