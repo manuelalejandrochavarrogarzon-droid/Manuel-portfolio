@@ -573,3 +573,85 @@ section::after{
     transform:translateY(0);
   }
 }
+
+/* =========================
+   CONTACT SECTION
+========================= */
+
+footer{
+
+  width:100%;
+
+  background:#0f172a;
+
+  color:white;
+
+  text-align:center;
+
+  padding:80px 20px;
+}
+
+.contact-text{
+
+  max-width:600px;
+
+  margin:20px auto;
+
+  line-height:1.8;
+
+  color:#d1d5db;
+}
+
+.contact-links{
+
+  display:flex;
+
+  justify-content:center;
+
+  gap:20px;
+
+  flex-wrap:wrap;
+
+  margin-top:35px;
+}
+
+.contact-links a{
+
+  text-decoration:none;
+
+  background:white;
+
+  color:#111827;
+
+  padding:14px 24px;
+
+  border-radius:12px;
+
+  font-weight:bold;
+
+  transition:0.3s;
+}
+
+.contact-links a:hover{
+
+  transform:translateY(-5px);
+
+  background:#dbeafe;
+}
+
+@media screen and (max-width:768px){
+
+  .contact-links{
+
+    flex-direction:column;
+
+    align-items:center;
+  }
+
+  .contact-links a{
+
+    width:90%;
+    text-align:center;
+  }
+
+}
