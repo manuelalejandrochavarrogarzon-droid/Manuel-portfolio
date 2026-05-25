@@ -4,18 +4,26 @@
   box-sizing:border-box;
 }
 
+html{
+  scroll-behavior:smooth;
+}
+
 body{
   font-family:Arial, sans-serif;
   background:#f3f4f6;
   color:#111827;
   overflow-x:hidden;
+  line-height:1.6;
 }
 
-/* NAVBAR */
+/* =========================
+   NAVBAR
+========================= */
 
 .navbar{
   width:100%;
   background:#0f172a;
+
   padding:20px 40px;
 
   display:flex;
@@ -27,6 +35,8 @@ body{
   left:0;
 
   z-index:1000;
+
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
 
 .logo{
@@ -52,7 +62,9 @@ body{
   color:#93c5fd;
 }
 
-/* HEADER */
+/* =========================
+   HEADER
+========================= */
 
 header{
   width:100%;
@@ -73,7 +85,7 @@ header{
 
   text-align:center;
 
-  padding:120px 20px 60px;
+  padding:140px 20px 80px;
 }
 
 .profile-image{
@@ -86,6 +98,8 @@ header{
   border:5px solid white;
 
   margin-bottom:25px;
+
+  box-shadow:0 10px 25px rgba(0,0,0,0.2);
 }
 
 header h1{
@@ -99,16 +113,26 @@ header p{
 
 .hero-text{
   max-width:700px;
+
   margin-top:40px;
-  font-size:38px;
+
+  font-size:36px;
+
   line-height:1.5;
+
+  color:#dbeafe;
+
+  font-weight:300;
 }
 
-/* BOTONES */
+/* =========================
+   BOTONES
+========================= */
 
 .buttons{
   display:flex;
   gap:20px;
+
   flex-wrap:wrap;
 
   justify-content:center;
@@ -118,7 +142,9 @@ header p{
 
 .buttons a{
   text-decoration:none;
+
   background:white;
+
   color:#111827;
 
   padding:15px 30px;
@@ -132,50 +158,100 @@ header p{
 
 .buttons a:hover{
   transform:translateY(-4px);
+
   background:#dbeafe;
 }
 
-/* CONTENIDO */
+/* =========================
+   CONTENEDOR
+========================= */
 
 .container{
   max-width:1200px;
   margin:auto;
-  padding:60px 20px;
+  padding:80px 20px;
 }
+
+/* =========================
+   SECCIONES
+========================= */
 
 section{
   margin-bottom:80px;
 }
 
 section h2{
-  font-size:36px;
-  margin-bottom:25px;
+  font-size:38px;
+
+  margin-bottom:30px;
+
+  color:#111827;
 }
 
-.card,
-.project-card,
-.skills-container{
+/* =========================
+   CARD SOBRE MI
+========================= */
+
+.card{
   background:white;
-  padding:30px;
+
+  padding:35px;
+
   border-radius:20px;
 
   box-shadow:0 5px 20px rgba(0,0,0,0.08);
+
+  line-height:1.9;
+
+  font-size:17px;
 }
 
-/* PROYECTOS */
+/* =========================
+   PROYECTOS
+========================= */
 
 .project-card{
-  transition:0.3s;
+  background:white;
+
+  padding:30px;
+
+  border-radius:20px;
+
+  box-shadow:0 5px 20px rgba(0,0,0,0.08);
+
+  margin-bottom:35px;
+
+  transition:0.3s ease;
 }
 
 .project-card:hover{
-  transform:translateY(-5px);
+  transform:translateY(-8px);
+
+  box-shadow:0 12px 30px rgba(0,0,0,0.12);
+}
+
+.project-card h3{
+  font-size:28px;
+
+  margin-bottom:20px;
+}
+
+.project-card p{
+  line-height:1.8;
 }
 
 .project-image{
   width:100%;
+
   border-radius:15px;
+
   margin:25px 0;
+
+  transition:0.3s ease;
+}
+
+.project-image:hover{
+  transform:scale(1.02);
 }
 
 .project-button{
@@ -184,45 +260,75 @@ section h2{
   margin-top:20px;
 
   background:#111827;
+
   color:white;
 
-  padding:12px 25px;
+  padding:14px 28px;
 
-  border-radius:10px;
+  border-radius:12px;
 
   text-decoration:none;
+
+  font-weight:bold;
 
   transition:0.3s;
 }
 
 .project-button:hover{
   background:#374151;
+
+  transform:translateY(-3px);
 }
 
-/* SKILLS */
+/* =========================
+   SKILLS
+========================= */
 
 .skills-container{
   display:flex;
+
   flex-wrap:wrap;
+
   gap:15px;
+
+  background:white;
+
+  padding:30px;
+
+  border-radius:20px;
+
+  box-shadow:0 5px 20px rgba(0,0,0,0.08);
 }
 
 .skill{
   background:#111827;
+
   color:white;
 
-  padding:12px 18px;
+  padding:12px 20px;
 
   border-radius:30px;
 
   font-size:14px;
+
+  transition:0.3s;
 }
 
-/* FOOTER */
+.skill:hover{
+  background:#2563eb;
+
+  transform:scale(1.08);
+}
+
+/* =========================
+   FOOTER
+========================= */
 
 footer{
   width:100%;
+
   background:#0f172a;
+
   color:white;
 
   text-align:center;
@@ -231,39 +337,60 @@ footer{
 }
 
 footer h2{
+  color:white;
+
   margin-bottom:20px;
 }
 
 footer p{
-  margin-bottom:10px;
+  margin-bottom:12px;
 }
 
 footer a{
   color:#93c5fd;
+
   text-decoration:none;
+}
+
+footer a:hover{
+  text-decoration:underline;
 }
 
 .footer-copy{
   margin-top:30px;
+
   opacity:0.7;
 }
 
-/* RESPONSIVE */
+/* =========================
+   RESPONSIVE
+========================= */
 
 @media screen and (max-width:768px){
 
   .navbar{
     flex-direction:column;
     gap:15px;
+
+    padding:20px;
   }
 
   .nav-links{
     flex-wrap:wrap;
     justify-content:center;
+    gap:15px;
+  }
+
+  header{
+    padding:180px 20px 80px;
   }
 
   header h1{
     font-size:38px;
+  }
+
+  header p{
+    font-size:16px;
   }
 
   .hero-text{
@@ -283,6 +410,17 @@ footer a{
   .buttons a{
     width:90%;
     margin:auto;
+    text-align:center;
+  }
+
+  section h2{
+    font-size:30px;
+  }
+
+  .card,
+  .project-card,
+  .skills-container{
+    padding:25px;
   }
 
 }
