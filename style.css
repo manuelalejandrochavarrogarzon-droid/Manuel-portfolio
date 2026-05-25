@@ -482,3 +482,45 @@ footer a:hover{
 .experience-card p{
   line-height:1.8;
 }
+
+/* =========================
+   EXPERIENCE FIX
+========================= */
+
+.experience-section .experience-card{
+
+  background:white !important;
+
+  padding:35px !important;
+
+  border-radius:20px !important;
+
+  margin-bottom:30px !important;
+
+  box-shadow:0 5px 20px rgba(0,0,0,0.08) !important;
+
+  transition:0.3s ease;
+}
+
+.experience-section .experience-card:hover{
+
+  transform:translateY(-6px);
+
+  box-shadow:0 12px 30px rgba(0,0,0,0.12) !important;
+}
+
+.experience-section .experience-card h3{
+
+  font-size:26px;
+
+  margin-bottom:15px;
+
+  color:#111827;
+}
+
+.experience-section .experience-card p{
+
+  line-height:1.8;
+
+  color:#374151;
+}
