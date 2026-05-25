@@ -1,18 +1,15 @@
-/* RESET */
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* HTML */
 
 html {
   scroll-behavior: smooth;
 }
 
-/* BODY */
+
 
 body {
   font-family: Arial, sans-serif;
@@ -22,12 +19,9 @@ body {
   line-height: 1.6;
 }
 
-/* NAVBAR */
 
 .navbar {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  width: 100%;
 
   display: flex;
   justify-content: space-between;
@@ -35,26 +29,32 @@ body {
 
   padding: 20px 40px;
 
-  background-color: rgba(15, 23, 42, 0.95);
+  background-color: #0f172a;
 
-  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+
+  z-index: 1000;
 }
 
 .nav-logo {
   color: white;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: bold;
 }
 
 .nav-links {
   display: flex;
   gap: 25px;
+
   list-style: none;
 }
 
 .nav-links a {
   color: white;
   text-decoration: none;
+  font-weight: bold;
+
   transition: 0.3s;
 }
 
@@ -62,24 +62,32 @@ body {
   color: #93c5fd;
 }
 
-/* HEADER */
 
 header {
   width: 100%;
-  background: linear-gradient(135deg, #0f172a, #1e293b);
+
+  background: linear-gradient(
+    135deg,
+    #0f172a,
+    #1e293b
+  );
+
   color: white;
+
   text-align: center;
+
   padding: 80px 20px;
+
   animation: fadeIn 1.2s ease;
 }
 
-/* FOTO */
 
 .profile-image {
   width: 180px;
   height: 180px;
 
   border-radius: 50%;
+
   object-fit: cover;
 
   border: 4px solid white;
@@ -87,10 +95,10 @@ header {
   margin-bottom: 20px;
 }
 
-/* TEXTOS */
+
 
 header h1 {
-  font-size: 42px;
+  font-size: 48px;
   margin-bottom: 10px;
 }
 
@@ -98,23 +106,32 @@ header p {
   font-size: 18px;
 }
 
+
+
 .hero-text {
   margin-top: 25px;
-  font-size: 24px;
+
+  font-size: 28px;
+
   font-weight: 300;
+
   max-width: 700px;
+
   margin-left: auto;
   margin-right: auto;
+
   line-height: 1.5;
+
   color: #d1d5db;
 }
 
-/* BOTONES */
+
 
 .buttons {
   display: flex;
   justify-content: center;
   gap: 15px;
+
   flex-wrap: wrap;
 
   margin-top: 30px;
@@ -122,11 +139,12 @@ header p {
 
 .buttons a {
   text-decoration: none;
+
   color: #111827;
 
   background: white;
 
-  padding: 12px 22px;
+  padding: 14px 24px;
 
   border-radius: 10px;
 
@@ -137,10 +155,11 @@ header p {
 
 .buttons a:hover {
   background-color: #d1d5db;
-  transform: translateY(-2px);
+
+  transform: translateY(-3px);
 }
 
-/* CONTAINER */
+
 
 .container {
   width: 100%;
@@ -151,20 +170,23 @@ header p {
   padding: 20px;
 }
 
-/* SECCIONES */
+
 
 section {
-  padding: 50px 20px;
+  padding: 60px 20px;
+
   max-width: 950px;
+
   margin: auto;
 }
 
 h2 {
   margin-bottom: 25px;
+
   font-size: 32px;
 }
 
-/* CARD GENERAL */
+
 
 .card {
   background: white;
@@ -176,7 +198,7 @@ h2 {
   box-shadow: 0px 4px 15px rgba(0,0,0,0.08);
 }
 
-/* TIMELINE */
+
 
 .timeline {
   display: flex;
@@ -202,7 +224,7 @@ h2 {
   transform: translateX(5px);
 }
 
-/* PROYECTOS */
+
 
 .project-card {
   background: white;
@@ -228,7 +250,7 @@ h2 {
   margin-bottom: 15px;
 }
 
-/* IMAGEN PROYECTO */
+
 
 .project-image {
   width: 100%;
@@ -244,7 +266,7 @@ h2 {
   transform: scale(1.02);
 }
 
-/* BOTON */
+
 
 .project-button {
   display: inline-block;
@@ -268,7 +290,7 @@ h2 {
   background-color: #374151;
 }
 
-/* SKILLS */
+
 
 .skills-container {
   display: flex;
@@ -300,10 +322,11 @@ h2 {
 
 .skill:hover {
   background-color: #374151;
+
   transform: scale(1.08);
 }
 
-/* FOOTER */
+
 
 footer {
   width: 100%;
@@ -319,6 +342,10 @@ footer {
   margin-top: 60px;
 }
 
+footer h2 {
+  color: white;
+}
+
 footer a {
   color: #93c5fd;
   text-decoration: none;
@@ -330,11 +357,13 @@ footer a:hover {
 
 .footer-copy {
   margin-top: 30px;
+
   font-size: 14px;
+
   opacity: 0.7;
 }
 
-/* ANIMACION */
+
 
 @keyframes fadeIn {
 
@@ -350,26 +379,32 @@ footer a:hover {
 
 }
 
-/* RESPONSIVE */
+
 
 @media screen and (max-width: 768px) {
 
+ 
+
   .navbar {
     flex-direction: column;
+
     gap: 15px;
   }
 
   .nav-links {
     flex-wrap: wrap;
+
     justify-content: center;
   }
+
+
 
   header {
     padding: 50px 20px;
   }
 
   header h1 {
-    font-size: 30px;
+    font-size: 32px;
   }
 
   header p {
@@ -377,7 +412,7 @@ footer a:hover {
   }
 
   .hero-text {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   .profile-image {
@@ -385,18 +420,30 @@ footer a:hover {
     height: 140px;
   }
 
+  
+
   .buttons {
     flex-direction: column;
+
     align-items: center;
   }
 
   .buttons a {
     width: 90%;
+
     text-align: center;
   }
 
+  
+
   h2 {
     font-size: 28px;
+  }
+
+
+
+  .project-card {
+    width: 100%;
   }
 
 }
