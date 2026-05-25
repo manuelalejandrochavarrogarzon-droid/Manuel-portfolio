@@ -52,7 +52,16 @@ header h1 {
 header p {
   font-size: 18px;
 }
-
+.hero-text {
+  margin-top: 25px;
+  font-size: 24px;
+  font-weight: 300;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+  color: #d1d5db;
+}
 
 
 .buttons {
