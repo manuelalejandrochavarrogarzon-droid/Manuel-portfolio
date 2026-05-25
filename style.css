@@ -424,3 +424,25 @@ footer a:hover{
   }
 
 }
+
+/* =========================
+   ABOUT SECTION FIX
+========================= */
+
+.about-section .card{
+  background:white !important;
+
+  padding:35px !important;
+
+  border-radius:20px !important;
+
+  box-shadow:0 5px 20px rgba(0,0,0,0.08) !important;
+
+  line-height:1.9 !important;
+
+  font-size:17px !important;
+}
+
+.about-section p{
+  color:#111827;
+}
