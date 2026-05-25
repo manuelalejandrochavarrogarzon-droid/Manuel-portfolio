@@ -2,60 +2,39 @@
 <html lang="es">
 
 <head>
-
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  />
+  <title>Portafolio | Manuel Alejandro</title>
 
-  <title>
-    Portfolio | Manuel Alejandro
-  </title>
-
-  <!-- CONEXION CSS -->
-  <link
-    rel="stylesheet"
-    href="style.css"
-  />
-
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
   <!-- NAVBAR -->
-
   <nav class="navbar">
 
-    <div class="nav-logo">
+    <div class="logo">
       Manuel.dev
     </div>
 
     <ul class="nav-links">
 
       <li>
-        <a href="#about">
-          Sobre mí
-        </a>
+        <a href="#sobre-mi">Sobre mí</a>
       </li>
 
       <li>
-        <a href="#experience">
-          Experiencia
-        </a>
+        <a href="#proyectos">Proyectos</a>
       </li>
 
       <li>
-        <a href="#projects">
-          Proyectos
-        </a>
+        <a href="#habilidades">Skills</a>
       </li>
 
       <li>
-        <a href="#skills">
-          Skills
-        </a>
+        <a href="#contacto">Contacto</a>
       </li>
 
     </ul>
@@ -63,7 +42,6 @@
   </nav>
 
   <!-- HEADER -->
-
   <header>
 
     <img
@@ -77,16 +55,12 @@
     </h1>
 
     <p>
-      Profesional en Publicidad |
-      Full Stack & Data Analytics en formación
+      Profesional en Publicidad | Full Stack & Data Analytics en formación
     </p>
 
     <h2 class="hero-text">
-
-      Construyendo experiencias digitales
-      que conectan creatividad,
+      Construyendo experiencias digitales que conectan creatividad,
       tecnología y estrategia.
-
     </h2>
 
     <div class="buttons">
@@ -113,116 +87,37 @@
 
   </header>
 
-  <!-- CONTENEDOR -->
-
   <div class="container">
 
     <!-- SOBRE MI -->
+    <section id="sobre-mi">
 
-    <section id="about">
-
-      <h2>
-        Sobre mí
-      </h2>
+      <h2>Sobre mí</h2>
 
       <div class="card">
 
         <p>
           Soy profesional en publicidad con experiencia en marketing digital,
-          producción BTL y gestión de marca,
-          combinando creatividad, estrategia y ejecución de proyectos.
+          producción BTL y gestión de marca.
         </p>
-
-        <br>
 
         <p>
           Actualmente complemento mi perfil con formación en Desarrollo Web
-          Full Stack y Análisis de Datos,
-          fortaleciendo mis habilidades en tecnología,
-          experiencia digital y soluciones enfocadas en usuario.
+          Full Stack y Análisis de Datos.
         </p>
-
-        <br>
-
-        <p>
-          Me apasiona crear proyectos que conecten diseño,
-          innovación y funcionalidad para generar experiencias digitales
-          de alto impacto.
-        </p>
-
-      </div>
-
-    </section>
-
-    <!-- EXPERIENCIA -->
-
-    <section id="experience">
-
-      <h2>
-        Experiencia & Formación
-      </h2>
-
-      <div class="timeline">
-
-        <div class="timeline-item">
-
-          <h3>
-            Publicidad & Marketing
-          </h3>
-
-          <p>
-            Experiencia en producción BTL,
-            marketing digital, branding,
-            coordinación de proyectos y estrategias de marca.
-          </p>
-
-        </div>
-
-        <div class="timeline-item">
-
-          <h3>
-            Desarrollo Web Full Stack
-          </h3>
-
-          <p>
-            Formación en desarrollo frontend y backend
-            con enfoque en experiencias digitales modernas.
-          </p>
-
-        </div>
-
-        <div class="timeline-item">
-
-          <h3>
-            Análisis de Datos
-          </h3>
-
-          <p>
-            Aprendiendo análisis, visualización e interpretación de datos
-            para la toma de decisiones estratégicas.
-          </p>
-
-        </div>
 
       </div>
 
     </section>
 
     <!-- PROYECTOS -->
+    <section id="proyectos">
 
-    <section id="projects">
-
-      <h2>
-        Proyectos
-      </h2>
-
-      <!-- PROYECTO 1 -->
+      <h2>Proyectos</h2>
 
       <div class="project-card">
 
-        <h3>
-          Around The U.S.
-        </h3>
+        <h3>Around The U.S.</h3>
 
         <img
           src="project1.png"
@@ -235,11 +130,8 @@
           APIs y Webpack.
         </p>
 
-        <br>
-
         <p>
-          Tecnologías:
-          HTML, CSS, JavaScript, APIs y Webpack.
+          Tecnologías: HTML, CSS, JavaScript, APIs y Responsive Design.
         </p>
 
         <a
@@ -252,46 +144,12 @@
 
       </div>
 
-      <!-- PROYECTO 2 -->
-
-      <div class="project-card">
-
-        <h3>
-          Marketing & Branding
-        </h3>
-
-        <p>
-          Proyecto enfocado en estrategia digital,
-          branding y posicionamiento de marca.
-        </p>
-
-        <br>
-
-        <p>
-          Habilidades:
-          Marketing Digital,
-          Branding,
-          Contenido Digital.
-        </p>
-
-        <a
-          href="#"
-          class="project-button"
-        >
-          Próximamente
-        </a>
-
-      </div>
-
     </section>
 
     <!-- HABILIDADES -->
+    <section id="habilidades">
 
-    <section id="skills">
-
-      <h2>
-        Habilidades
-      </h2>
+      <h2>Habilidades</h2>
 
       <div class="skills-container">
 
@@ -305,15 +163,13 @@
 
         <span class="skill">GitHub</span>
 
-        <span class="skill">Responsive Design</span>
-
         <span class="skill">APIs</span>
+
+        <span class="skill">Responsive Design</span>
 
         <span class="skill">Marketing Digital</span>
 
         <span class="skill">Branding</span>
-
-        <span class="skill">Producción BTL</span>
 
       </div>
 
@@ -322,12 +178,9 @@
   </div>
 
   <!-- FOOTER -->
+  <footer id="contacto">
 
-  <footer>
-
-    <h2>
-      Contacto
-    </h2>
+    <h2>Contacto</h2>
 
     <p>
       Email:
@@ -335,34 +188,23 @@
     </p>
 
     <p>
-
       GitHub:
-
       <a
         href="https://github.com/manuelalejandrochavarrogarzon-droid"
         target="_blank"
       >
         Ver perfil
       </a>
-
     </p>
 
     <p>
-
       LinkedIn:
-
       <a
         href="https://www.linkedin.com/in/manuel-alejandro-chavarro-garzon/"
         target="_blank"
       >
         Ver LinkedIn
       </a>
-
-    </p>
-
-    <p>
-      Portafolio desarrollado con HTML,
-      CSS y GitHub Pages.
     </p>
 
     <p class="footer-copy">
