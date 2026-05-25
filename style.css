@@ -174,3 +174,8 @@ footer a:hover {
   }
 
 }
+.project-image {
+  width: 100%;
+  border-radius: 10px;
+  margin: 20px 0;
+}
