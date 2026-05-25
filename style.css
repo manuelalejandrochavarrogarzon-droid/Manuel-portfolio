@@ -123,7 +123,8 @@ header p{
   color:#dbeafe;
 
   font-weight:300;
-}
+letter-spacing:1px;
+  }
 
 /* =========================
    BOTONES
@@ -523,4 +524,52 @@ footer a:hover{
   line-height:1.8;
 
   color:#374151;
+}
+
+/* =========================
+   SECTION SEPARATION
+========================= */
+
+section{
+  position:relative;
+}
+
+section::after{
+
+  content:"";
+
+  display:block;
+
+  width:100%;
+
+  height:1px;
+
+  background:#d1d5db;
+
+  margin-top:70px;
+}
+
+/* =========================
+   FADE ANIMATION
+========================= */
+
+.card,
+.project-card,
+.experience-card,
+.skills-container{
+
+  animation:fadeUp 1s ease;
+}
+
+@keyframes fadeUp{
+
+  from{
+    opacity:0;
+    transform:translateY(30px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
 }
