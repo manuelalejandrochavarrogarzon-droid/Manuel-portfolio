@@ -1,15 +1,20 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: #f3f4f6;
+  color: #111827;
+  overflow-x: hidden;
 }
 
 header {
-  background-color: #111827;
+  background-color: #0f172a;
   color: white;
   text-align: center;
-  padding: 80px 20px;
+  padding: 60px 20px;
 }
 
 header h1 {
@@ -40,17 +45,19 @@ div {
 }
 
 .buttons {
-  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 25px;
 }
 
 .buttons a {
-  display: inline-block;
-  margin: 10px;
-  padding: 12px 24px;
-  background-color: white;
-  color: #111827;
   text-decoration: none;
-  border-radius: 8px;
+  color: #111827;
+  background: white;
+  padding: 12px 20px;
+  border-radius: 10px;
   font-weight: bold;
   transition: 0.3s;
 }
